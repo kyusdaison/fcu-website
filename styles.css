@@ -48,6 +48,12 @@ header{position:sticky;top:0;z-index:50;background:rgba(248,242,232,.86);backdro
 .toggle{display:flex;flex:0 0 auto;width:max-content;align-self:center;border:1.5px solid var(--navy);border-radius:999px;overflow:hidden;}
 .toggle button{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.04em;padding:6px 13px;background:transparent;border:0;color:var(--navy);cursor:pointer;line-height:1.4;}
 .toggle button.on{background:var(--navy);color:var(--ivory);}
+.navctl{display:flex;align-items:center;gap:12px;flex:0 0 auto;}
+.menubtn{display:none;width:40px;height:34px;border:1.5px solid var(--navy);border-radius:8px;background:transparent;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:0;}
+.menubtn span{display:block;width:18px;height:2px;background:var(--navy);transition:transform .2s ease,opacity .2s ease;}
+header.menu-open .menubtn span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+header.menu-open .menubtn span:nth-child(2){opacity:0;}
+header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
 
 /* HERO (home) */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);}
@@ -254,7 +260,13 @@ footer{background:var(--navy);color:#C7CDce;}
 }
 @media (max-width:680px){
   body{font-size:16px;}
-  .navlinks{display:none;}
+  .brand .wm{display:none;}
+  .navlinks{position:absolute;top:100%;left:0;right:0;display:none;flex-direction:column;gap:0;margin:0;background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:0 14px 26px rgba(17,29,36,.10);padding:6px 0;}
+  header.menu-open .navlinks{display:flex;}
+  .navlinks a{padding:14px 24px;border-bottom:1px solid var(--line2);}
+  .navlinks a:last-child{border-bottom:0;}
+  .navctl{margin-left:auto;}
+  .menubtn{display:flex;}
   .hero .inner{padding:64px 0 56px;}
   .domains{grid-template-columns:1fr;}
   .prog-row{flex-direction:column;gap:10px;}

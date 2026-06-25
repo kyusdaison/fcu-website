@@ -106,3 +106,16 @@
   document.addEventListener('fcu:lang',function(){ setPanel(panelFac); });
   setPanel(null);
 })();
+
+/* mobile hamburger menu */
+(function(){
+  var header=document.querySelector('header'); if(!header) return;
+  var btn=header.querySelector('.menubtn'); if(!btn) return;
+  btn.addEventListener('click',function(){
+    var open=header.classList.toggle('menu-open');
+    btn.setAttribute('aria-expanded', open?'true':'false');
+  });
+  header.querySelectorAll('.navlinks a').forEach(function(a){
+    a.addEventListener('click',function(){ header.classList.remove('menu-open'); btn.setAttribute('aria-expanded','false'); });
+  });
+})();
