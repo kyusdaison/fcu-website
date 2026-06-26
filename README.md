@@ -24,4 +24,4 @@ A custom domain (e.g. `futurecitizen.university`) can be attached later under th
 
 ## Notes
 - The language toggle (中 / EN) remembers the visitor's choice via `localStorage`.
-- Contact addresses (`partnerships@` / `admissions@futurecitizen.university`) are **placeholders** — replace them once the real mailbox exists.
+- Contact address: `info@fcu.ms`.

@@ -86,12 +86,15 @@
     panel.style.borderLeftColor=c?c.getAttribute('fill'):'#A51B18';
   }
   function select(i){ panelFac=i; highlight(i); setPanel(i); }
+  var noHover = !!(window.matchMedia && matchMedia('(hover: none)').matches);
   nodes().forEach(function(n){
     var i=n.getAttribute('data-i');
     n.addEventListener('mouseenter',function(){select(i);});
     n.addEventListener('focus',function(){select(i);});
     n.addEventListener('mouseleave',clearHL);
     n.addEventListener('blur',clearHL);
+    /* touch: first tap previews, second tap on same node opens its page */
+    n.addEventListener('click',function(e){ if(noHover && panelFac!==i){ e.preventDefault(); select(i); } });
   });
   var hub=svg.querySelector('.hub');
   if(hub){
