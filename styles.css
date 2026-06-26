@@ -254,6 +254,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .standards-grid p{font-size:15px;line-height:1.65;color:var(--muted);margin:0;}
 .lang-zh .standards-grid p{font-weight:300;}
 .programme-orientation>div{min-height:186px;}
+.quality-grid>div{min-height:196px;}
 
 /* QUOTE band */
 .quote{background:var(--deepnavy);color:#fff;}
