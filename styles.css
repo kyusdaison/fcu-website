@@ -90,6 +90,7 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .media-panel{margin:0;border:1px solid var(--line);background:var(--paper);padding:10px;}
 .media-panel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;}
 .media-panel figcaption{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding:12px 4px 3px;}
+.media-panel figcaption,.glance-item .gi-v,.btn{overflow-wrap:break-word;}
 .lang-zh .media-panel figcaption{letter-spacing:.06em;}
 .media-copy h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.8vw,44px);line-height:1.14;color:var(--navy);margin:14px 0 16px;}
 .lang-zh .media-copy h2{line-height:1.3;letter-spacing:1.2px;}
@@ -357,6 +358,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .mechanism-grid{grid-template-columns:1fr;}
   .standards-grid{grid-template-columns:1fr;}
   .standards-grid>div{min-height:0;}
+  .compact-head{margin-top:28px;margin-bottom:18px;}
+  .compact-head h2{font-size:24px;}
   .programme-grid{grid-template-columns:1fr;}
   .programme-card{min-height:0;}
   .facnav{gap:8px;}
@@ -477,6 +480,9 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .glance-grid{grid-template-columns:repeat(2,1fr);}
   .glance-item{min-height:0;padding:16px 18px;}
   .glance-actions{grid-column:auto;margin-top:18px;}
+  .compact-head{break-after:avoid;margin-top:24px;margin-bottom:16px;}
+  .compact-head h2{font-size:24px;}
+  .profile-grid>div{min-height:0;}
   .media-split,.split{grid-template-columns:1fr;gap:24px;}
   .mechanism-grid{grid-template-columns:1fr 1fr;}
   .ladder{display:block;border:0;}
