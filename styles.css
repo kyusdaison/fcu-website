@@ -276,6 +276,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .quality-grid>div{min-height:196px;}
 .governance-grid>div{min-height:190px;}
 .mode-grid>div{min-height:190px;}
+.calendar-grid>div{min-height:206px;}
 .research-route-grid>div{min-height:206px;}
 .journey-grid>div{min-height:188px;}
 .advising-grid>div{min-height:188px;}
