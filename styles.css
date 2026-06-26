@@ -29,7 +29,7 @@ img,svg{display:block;}
 a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid rgba(165,27,24,.38);outline-offset:3px;}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.02em;padding:13px 22px;border:1.5px solid var(--navy);transition:.18s ease;cursor:pointer;}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:48px;gap:.5em;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.02em;padding:13px 22px;border:1.5px solid var(--navy);transition:.18s ease;cursor:pointer;}
 .btn.primary{background:var(--maroon);border-color:var(--maroon);color:#fff;}
 .btn.primary:hover{background:#8c1714;border-color:#8c1714;}
 .btn.ghost{background:transparent;color:var(--navy);}
