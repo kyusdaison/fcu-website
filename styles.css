@@ -335,6 +335,12 @@ footer{background:var(--navy);color:#C7CDce;}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;}}
 
 /* responsive */
+@media (max-width:1120px){
+  .nav{gap:16px;}
+  .navlinks{gap:16px;}
+  .navlinks a{font-size:12px;}
+  .brand .wm{font-size:16px;}
+}
 @media (max-width:900px){
   .ethos .inner{grid-template-columns:1fr;gap:26px;}
   .glance-inner{grid-template-columns:1fr;gap:24px;}
