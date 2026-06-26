@@ -107,6 +107,19 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .mechanism-grid p{font-size:14px;line-height:1.62;color:var(--muted);margin:0;}
 .lang-zh .mechanism-grid p{font-weight:300;}
 
+/* institutional horizon */
+.horizon{background:var(--navy);color:#fff;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);}
+.horizon .kick{color:#E5A6A0;}
+.horizon .head h2{color:#fff;}
+.horizon .head p{color:#C9C0B2;}
+.horizon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);}
+.horizon-card{background:#16262F;padding:28px 24px 26px;min-height:246px;display:flex;flex-direction:column;}
+.horizon-card .hm{height:34px;margin-bottom:28px;}
+.mini-mark{width:28px;height:28px;}
+.horizon-card h3{font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.25;color:#fff;margin:0 0 12px;}
+.horizon-card p{font-size:14.5px;line-height:1.72;color:#C9C0B2;margin:0;}
+.lang-zh .horizon-card p{font-weight:300;}
+
 /* AT A GLANCE */
 .glance{border-bottom:1px solid var(--line);}
 .glance-inner{padding:58px 0;display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;align-items:start;}
@@ -330,6 +343,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .path-grid{grid-template-columns:repeat(2,1fr);}
   .path-step:last-child{grid-column:1 / -1;min-height:0;}
   .media-split{grid-template-columns:1fr;gap:28px;}
+  .horizon-grid{grid-template-columns:repeat(2,1fr);}
   .programme-grid{grid-template-columns:repeat(2,1fr);}
   .domains{grid-template-columns:repeat(2,1fr);}
   .fgrid{grid-template-columns:1fr;}
@@ -360,6 +374,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .path-grid{grid-template-columns:1fr;}
   .path-step{min-height:0;}
   .mechanism-grid{grid-template-columns:1fr;}
+  .horizon-grid{grid-template-columns:1fr;}
+  .horizon-card{min-height:0;}
   .programme-grid{grid-template-columns:1fr;}
   .programme-card{min-height:0;}
   .domains{grid-template-columns:1fr;}
@@ -463,6 +479,7 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .path-step{min-height:0;}
   .media-split,.split,.ethos .inner{grid-template-columns:1fr;gap:24px;}
   .mechanism-grid{grid-template-columns:1fr 1fr;}
+  .horizon-grid{grid-template-columns:repeat(2,1fr);}
   .fgrid,.domains{grid-template-columns:1fr 1fr;}
   .diagram-stage{grid-template-columns:1fr;}
   footer{break-inside:avoid;}
