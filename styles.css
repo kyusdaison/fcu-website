@@ -259,6 +259,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .standards-grid p{font-size:15px;line-height:1.65;color:var(--muted);margin:0;}
 .lang-zh .standards-grid p{font-weight:300;}
 .programme-orientation>div{min-height:186px;}
+.programme-choice>div{min-height:188px;}
 .quality-grid>div{min-height:196px;}
 .governance-grid>div{min-height:190px;}
 .mode-grid>div{min-height:190px;}
@@ -375,6 +376,7 @@ footer{background:var(--navy);color:#C7CDce;}
 
 @media print{
   .wrap{width:auto;max-width:1120px;margin:0 auto;}
+  .head{break-inside:avoid;page-break-inside:avoid;}
   .mechanism-grid{display:block;border:0;background:transparent;}
   .mechanism-grid>div{min-height:0;border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;}
   .standards-grid{display:block;border:0;background:transparent;}
