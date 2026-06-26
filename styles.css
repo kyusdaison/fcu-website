@@ -9,6 +9,7 @@
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
+section[id]{scroll-margin-top:92px;}
 body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 
 /* language switch */
@@ -205,7 +206,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 /* faculty cross-nav */
 .facnav{display:flex;flex-wrap:wrap;gap:10px;}
 .facnav a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--paper);padding:11px 15px;font-family:var(--serif);font-weight:600;font-size:14px;color:var(--navy);transition:.15s;}
-.facnav a:hover{border-color:var(--navy);}
+.facnav a:hover,.facnav a:focus-visible{border-color:var(--navy);background:#fff;}
 .facnav a .fn{width:22px;height:22px;flex:0 0 auto;background:var(--navy);color:var(--ivory);font-size:12px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
 .facnav a.on{background:var(--navy);color:#fff;}
 .facnav a.on .fn{background:var(--maroon);}
@@ -215,11 +216,13 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 /* PROGRAMMES hub */
 .programme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
 .programme-card{border:1px solid var(--line);background:var(--paper);padding:26px 24px 24px;transition:.18s ease;display:flex;flex-direction:column;min-height:230px;}
-.programme-card:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 10px 30px rgba(17,29,36,.07);}
+.programme-card:hover,.programme-card:focus-within{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 10px 30px rgba(17,29,36,.07);}
 .programme-label{font-family:var(--sans);font-weight:700;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--maroon);margin-bottom:15px;}
 .programme-card h3{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1.25;color:var(--navy);margin:0 0 12px;}
 .programme-card p{font-size:15px;line-height:1.65;color:var(--muted);margin:0;}
 .lang-zh .programme-card p{font-weight:300;}
+.prog-row:focus-within{border-color:var(--navy);background:#fff;}
+.prog .pv a.proglink:hover,.prog .pv a.proglink:focus-visible{border-color:var(--maroon);color:var(--maroon);}
 
 /* ABOUT — trio & principles */
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
@@ -328,6 +331,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .mechanism-grid{grid-template-columns:1fr;}
   .programme-grid{grid-template-columns:1fr;}
   .programme-card{min-height:0;}
+  .facnav{gap:8px;}
+  .facnav a{flex:1 1 100%;justify-content:space-between;padding:12px 14px;}
   .domains{grid-template-columns:1fr;}
   .prog-row{flex-direction:column;gap:10px;}
 }
