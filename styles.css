@@ -247,6 +247,12 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .principle h3{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin:0 0 8px;}
 .principle p{font-size:16px;color:var(--muted);line-height:1.75;margin:0;max-width:760px;}
 .lang-zh .principle p{font-weight:300;}
+.standards-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--line);gap:1px;}
+.standards-grid>div{background:var(--ivory);padding:24px 22px 22px;min-height:210px;}
+.standards-grid>div>span{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--maroon);}
+.standards-grid h3{font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.25;color:var(--navy);margin:14px 0 10px;}
+.standards-grid p{font-size:15px;line-height:1.65;color:var(--muted);margin:0;}
+.lang-zh .standards-grid p{font-weight:300;}
 
 /* QUOTE band */
 .quote{background:var(--deepnavy);color:#fff;}
@@ -319,6 +325,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .ladder .step:last-child{border-bottom:0;}
   .split{grid-template-columns:1fr;gap:18px;}
   .trio{grid-template-columns:1fr;}
+  .standards-grid{grid-template-columns:repeat(2,1fr);}
   .contact .two,.foot{grid-template-columns:1fr;}
   .foot{gap:30px;}
 }
@@ -339,6 +346,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .glance-inner{padding:44px 0;}
   .glance-grid{grid-template-columns:1fr;}
   .mechanism-grid{grid-template-columns:1fr;}
+  .standards-grid{grid-template-columns:1fr;}
+  .standards-grid>div{min-height:0;}
   .programme-grid{grid-template-columns:1fr;}
   .programme-card{min-height:0;}
   .facnav{gap:8px;}
@@ -352,6 +361,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .wrap{width:auto;max-width:1120px;margin:0 auto;}
   .mechanism-grid{display:block;border:0;background:transparent;}
   .mechanism-grid>div{min-height:0;border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;}
+  .standards-grid{display:block;border:0;background:transparent;}
+  .standards-grid>div{min-height:0;border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;}
 }
 
 /* ===== interfaculty diagram ===== */
