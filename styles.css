@@ -104,6 +104,8 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .mechanism-grid h3{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--navy);margin:0 0 8px;line-height:1.28;}
 .mechanism-grid p{font-size:14px;line-height:1.62;color:var(--muted);margin:0;}
 .lang-zh .mechanism-grid p{font-weight:300;}
+.mechanism-grid>div,.standards-grid>div,.prog-row,.facnav a{min-width:0;}
+.mechanism-grid h3,.mechanism-grid p,.standards-grid h3,.standards-grid p,.prog .pk,.prog .pv,.facnav a{overflow-wrap:break-word;}
 
 /* AT A GLANCE */
 .glance{border-bottom:1px solid var(--line);}
@@ -209,7 +211,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 
 /* faculty cross-nav */
 .facnav{display:flex;flex-wrap:wrap;gap:10px;}
-.facnav a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--paper);padding:11px 15px;font-family:var(--serif);font-weight:600;font-size:14px;color:var(--navy);transition:.15s;}
+.facnav a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--paper);padding:11px 15px;font-family:var(--serif);font-weight:600;font-size:14px;color:var(--navy);transition:.15s;max-width:100%;}
 .facnav a:hover,.facnav a:focus-visible{border-color:var(--navy);background:#fff;}
 .facnav a .fn{width:22px;height:22px;flex:0 0 auto;background:var(--navy);color:var(--ivory);font-size:12px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
 .facnav a.on{background:var(--navy);color:#fff;}
@@ -473,6 +475,9 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .ladder .step{border:1px solid var(--line);margin:0 0 8px;padding:22px 24px;break-inside:avoid;page-break-inside:avoid;}
   .fgrid,.domains{grid-template-columns:1fr 1fr;}
   .diagram-stage{grid-template-columns:1fr;}
+  .route-nav{break-inside:avoid;page-break-inside:avoid;}
+  .route-nav .facnav a{min-height:0;padding:8px 10px;color:var(--navy)!important;text-decoration:none;}
+  .standards-grid h3,.mechanism-grid h3{line-height:1.22;}
   .quote{break-inside:avoid;page-break-inside:avoid;}
   .quote .inner{padding:58px 0;}
   .quote blockquote{font-size:24px;line-height:1.35;}
