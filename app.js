@@ -121,4 +121,17 @@
   header.querySelectorAll('.navlinks a').forEach(function(a){
     a.addEventListener('click',function(){ header.classList.remove('menu-open'); btn.setAttribute('aria-expanded','false'); });
   });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && header.classList.contains('menu-open')){
+      header.classList.remove('menu-open');
+      btn.setAttribute('aria-expanded','false');
+      btn.focus();
+    }
+  });
+  window.addEventListener('resize',function(){
+    if(window.innerWidth>680 && header.classList.contains('menu-open')){
+      header.classList.remove('menu-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
 })();
