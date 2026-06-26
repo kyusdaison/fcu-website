@@ -356,6 +356,9 @@ footer{background:var(--navy);color:#C7CDce;}
   .route-nav{padding:22px 0;}
   .domains{grid-template-columns:1fr;}
   .prog-row{flex-direction:column;gap:10px;}
+  .contact .inner{padding:64px 0;}
+  .ccard{padding:26px 22px;}
+  .ccard h3{font-size:21px;}
 }
 
 @media print{
@@ -461,7 +464,19 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .hero-institutional .facts span{font-size:10px;}
   .media-split,.split{grid-template-columns:1fr;gap:24px;}
   .mechanism-grid{grid-template-columns:1fr 1fr;}
+  .ladder{display:block;border:0;}
+  .ladder .step{border:1px solid var(--line);margin:0 0 8px;padding:22px 24px;break-inside:avoid;page-break-inside:avoid;}
   .fgrid,.domains{grid-template-columns:1fr 1fr;}
   .diagram-stage{grid-template-columns:1fr;}
+  .quote{break-inside:avoid;page-break-inside:avoid;}
+  .quote .inner{padding:58px 0;}
+  .quote blockquote{font-size:24px;line-height:1.35;}
+  .contact .two{display:block;break-inside:avoid;}
+  .ccard{margin:0 0 12px;padding:22px 24px;}
+  .ccard,.dx-panel,.media-panel{break-inside:avoid;page-break-inside:avoid;}
+  .foot{padding:48px 24px 24px;}
+  .footbar{padding:16px 24px;}
+  .footbar{display:block;}
+  .footbar span{display:block;margin:0 0 6px;}
   footer{break-inside:avoid;}
 }
