@@ -458,9 +458,11 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .navctl{display:none;}
   .btn{padding:10px 14px;font-size:11px;}
   .hero-institutional{min-height:0;display:block;}
+  .hero-institutional .hero-bg{opacity:.46;}
+  .hero-institutional .hero-overlay{background:rgba(17,29,24,.68);}
   .hero-institutional .inner{padding:76px 0 58px;}
   .hero-institutional h1{font-size:42px;}
-  .hero-institutional .lead{font-size:17px;}
+  .hero-institutional .lead{font-size:17px;color:#F8F2E8;}
   .hero-institutional .facts span{font-size:10px;}
   .media-split,.split{grid-template-columns:1fr;gap:24px;}
   .mechanism-grid{grid-template-columns:1fr 1fr;}
