@@ -390,6 +390,20 @@ footer{background:var(--navy);color:#C7CDce;}
   .ccard{padding:26px 22px;}
   .ccard h3{font-size:21px;}
 }
+@media (max-width:520px){
+  .wrap{width:min(var(--wrap),calc(100% - 32px));}
+  .hero .cta,.glance-actions,.phero-cta{display:grid;grid-template-columns:1fr;gap:10px;}
+  .hero .cta .btn,.glance-actions .btn,.phero-cta .btn{width:100%;}
+  .hero .facts{display:grid;gap:0;}
+  .hero .facts span{padding:0 0 9px;margin:0 0 9px;border-right:0;border-bottom:1px solid var(--line);}
+  .hero .facts span:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0;}
+  .hero-institutional .facts span{border-bottom-color:rgba(255,255,255,.22);}
+  .phero{padding:48px 0 44px;}
+  .phero h1{max-width:none;}
+  .media-panel{padding:8px;}
+  .media-panel figcaption{font-size:10px;line-height:1.45;}
+  .toggle button{padding:6px 11px;}
+}
 
 /* ===== interfaculty diagram ===== */
 .diagram-sec .dhead{max-width:660px;margin:0 auto 14px;text-align:center;}
@@ -479,6 +493,8 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .navlinks a{font-size:9.5px;padding:0;border:0;}
   .navctl{display:none;}
   .btn{padding:10px 14px;font-size:11px;}
+  .pad{padding:58px 0;}
+  .phero{padding:46px 0 42px;}
   .hero-institutional{min-height:0;display:block;}
   .hero-institutional .hero-bg{opacity:.46;}
   .hero-institutional .hero-overlay{background:rgba(17,29,24,.68);}
