@@ -98,6 +98,7 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .research-culture{border-top:1px solid var(--line2);}
 .research-culture .media-split{grid-template-columns:.98fr 1.02fr;}
 .research-culture .media-panel img{aspect-ratio:16/9;}
+.research-culture .mechanism-grid>div{min-height:126px;}
 .mechanism-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--line);gap:1px;}
 .mechanism-grid>div{background:var(--ivory);padding:20px 18px 18px;min-height:138px;}
 .mechanism-grid h3{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--navy);margin:0 0 8px;line-height:1.28;}
@@ -349,6 +350,8 @@ footer{background:var(--navy);color:#C7CDce;}
 
 @media print{
   .wrap{width:auto;max-width:1120px;margin:0 auto;}
+  .mechanism-grid{display:block;border:0;background:transparent;}
+  .mechanism-grid>div{min-height:0;border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;}
 }
 
 /* ===== interfaculty diagram ===== */
