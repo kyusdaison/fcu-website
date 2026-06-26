@@ -297,14 +297,17 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 
 /* CONTACT */
 .contact .inner{padding:88px 0;}
+.contact .head p{max-width:760px;}
 .contact .two{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px;}
-.ccard{border:1px solid var(--line);background:var(--paper);padding:32px;}
+.ccard{border:1px solid var(--line);background:var(--paper);padding:32px;display:flex;flex-direction:column;min-height:252px;}
 .ccard .pl{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);}
 .lang-zh .ccard .pl{letter-spacing:.08em;}
 .ccard h3{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--navy);margin:12px 0 8px;}
 .ccard p{font-size:15px;color:var(--muted);line-height:1.7;margin:0 0 18px;}
 .lang-zh .ccard p{font-weight:300;}
-.ccard a.mail{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--maroon);border-bottom:1.5px solid var(--maroon);padding-bottom:1px;word-break:break-all;}
+.ccard .meta{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:auto;margin-bottom:12px;}
+.lang-zh .ccard .meta{letter-spacing:.06em;}
+.ccard a.mail{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--maroon);border-bottom:1.5px solid var(--maroon);padding-bottom:1px;word-break:break-all;align-self:flex-start;}
 
 /* FOOTER */
 footer{background:var(--navy);color:#C7CDce;}
