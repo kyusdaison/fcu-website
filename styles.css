@@ -210,6 +210,11 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .facnav a .fn{width:22px;height:22px;flex:0 0 auto;background:var(--navy);color:var(--ivory);font-size:12px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
 .facnav a.on{background:var(--navy);color:#fff;}
 .facnav a.on .fn{background:var(--maroon);}
+.route-nav{padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.route-nav .facnav{justify-content:center;}
+.route-nav .facnav a{min-height:46px;background:var(--ivory);}
+.route-nav .facnav a:hover,.route-nav .facnav a:focus-visible{background:#fff;}
+.route-nav + .pad.band{border-top:0;}
 
 .phero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
 
@@ -333,8 +338,13 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-card{min-height:0;}
   .facnav{gap:8px;}
   .facnav a{flex:1 1 100%;justify-content:space-between;padding:12px 14px;}
+  .route-nav{padding:22px 0;}
   .domains{grid-template-columns:1fr;}
   .prog-row{flex-direction:column;gap:10px;}
+}
+
+@media print{
+  .wrap{width:auto;max-width:1120px;margin:0 auto;}
 }
 
 /* ===== interfaculty diagram ===== */
