@@ -90,7 +90,7 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 /* media-led academic system */
 .media-split{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;}
 .media-panel{margin:0;border:1px solid var(--line);background:var(--paper);padding:10px;overflow:hidden;}
-.media-panel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--paper2);}
+.media-panel img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center;background:var(--paper2);}
 .media-panel figcaption{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);padding:12px 4px 3px;}
 .media-panel figcaption,.glance-item .gi-v,.btn{overflow-wrap:break-word;}
 .lang-zh .media-panel figcaption{letter-spacing:.06em;}
@@ -167,7 +167,7 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 
 /* domains */
 .domains{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-.domains .d{background:var(--paper);padding:26px 24px;}
+.domains .d{background:var(--paper);padding:26px 24px;min-height:164px;}
 .domains .d .n{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--maroon);}
 .domains .d h3{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--navy);margin:10px 0 0;line-height:1.35;}
 .domains .d p{font-size:14px;line-height:1.58;color:var(--muted);margin:12px 0 0;}
@@ -218,7 +218,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 
 /* faculty cross-nav */
 .facnav{display:flex;flex-wrap:wrap;gap:10px;}
-.facnav a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--paper);padding:11px 15px;font-family:var(--serif);font-weight:600;font-size:14px;color:var(--navy);transition:.15s;max-width:100%;}
+.facnav a{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--paper);padding:11px 15px;font-family:var(--serif);font-weight:600;font-size:14px;line-height:1.25;color:var(--navy);transition:.15s;max-width:100%;}
 .facnav a:hover,.facnav a:focus-visible{border-color:var(--navy);background:#fff;}
 .facnav a .fn{width:22px;height:22px;flex:0 0 auto;background:var(--navy);color:var(--ivory);font-size:12px;display:flex;align-items:center;justify-content:center;border-radius:50%;}
 .facnav a.on{background:var(--navy);color:#fff;}
