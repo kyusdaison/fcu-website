@@ -168,6 +168,8 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .domains .d{background:var(--paper);padding:26px 24px;}
 .domains .d .n{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--maroon);}
 .domains .d h3{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--navy);margin:10px 0 0;line-height:1.35;}
+.domains .d p{font-size:14px;line-height:1.58;color:var(--muted);margin:12px 0 0;}
+.lang-zh .domains .d p{font-weight:300;}
 
 /* FACULTIES grid (home) */
 .faculties{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -499,7 +501,8 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .lang-en .fcard .chips.zh,.lang-zh .fcard .chips.en{display:none;}
   .lang-en .fcard .chips.en,.lang-zh .fcard .chips.zh{display:block;}
   .fcard .chips span{display:block;max-width:100%;margin:0 0 6px;padding:5px 9px;font-size:11px;line-height:1.35;}
-  .domains{grid-template-columns:1fr 1fr;}
+  .domains{display:block;border:0;background:transparent;}
+  .domains .d{border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;page-break-inside:avoid;}
   .diagram-stage{grid-template-columns:1fr;}
   .route-nav{break-inside:avoid;page-break-inside:avoid;}
   .route-nav .facnav a{min-height:0;padding:8px 10px;color:var(--navy)!important;text-decoration:none;}
