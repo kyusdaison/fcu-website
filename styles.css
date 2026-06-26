@@ -281,6 +281,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .journey-grid>div{min-height:188px;}
 .advising-grid>div{min-height:188px;}
 .advising-practice-grid>div{min-height:150px;}
+.quality-practice-grid>div{min-height:148px;}
 .profile-grid>div{min-height:178px;}
 
 /* QUOTE band */
