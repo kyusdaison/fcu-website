@@ -269,6 +269,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .programme-orientation>div{min-height:186px;}
 .programme-choice>div{min-height:188px;}
 .entry-grid>div{min-height:196px;}
+.reading-grid>div{min-height:196px;}
 .quality-grid>div{min-height:196px;}
 .governance-grid>div{min-height:190px;}
 .mode-grid>div{min-height:190px;}
