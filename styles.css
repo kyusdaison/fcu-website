@@ -308,6 +308,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .contact .inner{padding:88px 0;}
 .contact .head p{max-width:760px;}
 .contact .two{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:38px;}
+.contact .contact-grid{grid-template-columns:repeat(3,1fr);}
 .ccard{border:1px solid var(--line);background:var(--paper);padding:32px;display:flex;flex-direction:column;min-height:252px;}
 .ccard .pl{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);}
 .lang-zh .ccard .pl{letter-spacing:.08em;}
