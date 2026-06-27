@@ -5,7 +5,7 @@ No build step — plain HTML, CSS and JavaScript. Just static files served as-is
 
 ## Pages
 - `index.html` — Home: hero, vision, interactive interfaculty diagram, five faculties, degree ladder, contact
-- `about.html` — About: vision, mission, founding principles, interfaculty diagram
+- `about.html` — About: vision, mission, academic standards, principles, interfaculty diagram
 - `news.html` — News & updates
 - `faculty-digital-governance.html` · `faculty-computing-ai.html` · `faculty-economy-finance.html` · `faculty-human-development.html` · `faculty-design-media.html` — the five foundational faculties
 - `styles.css` · `app.js` — shared styles and scripts (language toggle, diagram interaction)
