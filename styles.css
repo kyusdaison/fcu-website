@@ -581,3 +581,14 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
 .formnote{font-family:var(--sans);font-size:13px;line-height:1.6;color:var(--muted);margin:0;max-width:430px;}
 .formnote a{color:var(--maroon);border-bottom:1px solid var(--maroon);}
 @media(max-width:600px){.fgrid2{grid-template-columns:1fr;gap:16px;}}
+
+/* faculty hero visual identity */
+.fachero-grid{display:grid;grid-template-columns:1fr minmax(190px,300px);gap:48px;align-items:center;}
+.fachero-main{max-width:700px;}
+.fachero .kick{color:var(--acc);}
+.fachero-side{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;}
+.fachero-num{font-family:var(--serif);font-weight:700;font-size:clamp(150px,17vw,260px);line-height:.76;letter-spacing:-.03em;color:var(--acc);opacity:.16;user-select:none;}
+@media(max-width:900px){.fachero-grid{grid-template-columns:1fr;gap:18px;}.fachero-side{flex-direction:row;justify-content:flex-start;gap:26px;}.fachero-num{font-size:104px;}}
+@media(max-width:560px){.fachero-side .mark{display:none;}.fachero-num{font-size:80px;}}
+/* course pages inherit their faculty's accent on the eyebrow */
+.coursehero .kick{color:var(--acc);}
