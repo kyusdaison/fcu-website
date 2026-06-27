@@ -1,3 +1,17 @@
+/* self-hosted, subsetted fonts (served from this origin; no third-party font requests).
+   CJK faces are unicode-range-gated, so English pages never download them.
+   System serif/sans CJK remain in the font stack as a fallback for any un-subset glyph. */
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url("lora.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF,U+2190-21FF;}
+@font-face{font-family:"Lora";font-style:italic;font-weight:400 700;font-display:swap;src:url("lora-italic.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF;}
+@font-face{font-family:"Lato";font-style:normal;font-weight:300;font-display:swap;src:url("lato-300.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF,U+2190-21FF;}
+@font-face{font-family:"Lato";font-style:normal;font-weight:400;font-display:swap;src:url("lato-400.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF,U+2190-21FF;}
+@font-face{font-family:"Lato";font-style:normal;font-weight:700;font-display:swap;src:url("lato-700.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF,U+2190-21FF;}
+@font-face{font-family:"Lato";font-style:normal;font-weight:900;font-display:swap;src:url("lato-900.woff2") format("woff2");unicode-range:U+0000-024F,U+2000-22FF,U+2190-21FF;}
+@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:400;font-display:swap;src:url("noto-serif-sc-400.woff2") format("woff2");unicode-range:U+3000-303F,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FE30-FE4F,U+FF00-FFEF;}
+@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:700;font-display:swap;src:url("noto-serif-sc-700.woff2") format("woff2");unicode-range:U+3000-303F,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FE30-FE4F,U+FF00-FFEF;}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:400;font-display:swap;src:url("noto-sans-sc-400.woff2") format("woff2");unicode-range:U+3000-303F,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FE30-FE4F,U+FF00-FFEF;}
+@font-face{font-family:"Noto Sans SC";font-style:normal;font-weight:700;font-display:swap;src:url("noto-sans-sc-700.woff2") format("woff2");unicode-range:U+3000-303F,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FE30-FE4F,U+FF00-FFEF;}
+
 :root{
   --ivory:#F8F2E8; --paper:#FFFAF1; --paper2:#F2EADC;
   --ink:#1E2A30; --navy:#111D24; --deepnavy:#233746;
@@ -552,3 +566,18 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
 }
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+
+/* enquiry form */
+.enquiry{max-width:780px;margin-top:8px;}
+.fgrid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 18px;}
+.enquiry label{display:block;}
+.enquiry .lbl{display:block;font-family:var(--sans);font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--deepnavy);margin:0 0 7px;}
+.enquiry input,.enquiry select,.enquiry textarea{width:100%;font-family:var(--sans);font-size:16px;line-height:1.5;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);padding:12px 13px;border-radius:0;-webkit-appearance:none;appearance:none;}
+.enquiry select{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23233746' stroke-width='1.6'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;}
+.enquiry input:focus,.enquiry select:focus,.enquiry textarea:focus{outline:none;border-color:var(--maroon);box-shadow:0 0 0 3px rgba(165,27,24,.12);}
+.enquiry textarea{resize:vertical;margin:0 0 18px;}
+.enquiry .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;}
+.formfoot{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.formnote{font-family:var(--sans);font-size:13px;line-height:1.6;color:var(--muted);margin:0;max-width:430px;}
+.formnote a{color:var(--maroon);border-bottom:1px solid var(--maroon);}
+@media(max-width:600px){.fgrid2{grid-template-columns:1fr;gap:16px;}}

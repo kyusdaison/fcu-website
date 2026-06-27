@@ -7,7 +7,9 @@
     root.classList.add('lang-'+l);
     root.setAttribute('lang', l==='zh'?'zh-Hans':'en');
     document.querySelectorAll('.toggle button').forEach(function(b){
-      b.classList.toggle('on', b.getAttribute('data-lang')===l);
+      var on=b.getAttribute('data-lang')===l;
+      b.classList.toggle('on', on);
+      b.setAttribute('aria-pressed', on?'true':'false');
     });
     document.querySelectorAll('[data-en][data-zh]').forEach(function(el){
       el.textContent = (l==='zh') ? el.getAttribute('data-zh') : el.getAttribute('data-en');
@@ -133,5 +135,26 @@
       header.classList.remove('menu-open');
       btn.setAttribute('aria-expanded','false');
     }
+  });
+})();
+
+/* enquiry form: compose a mailto when no server endpoint is configured */
+(function(){
+  document.querySelectorAll('form.enquiry:not([action])').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var zh=document.documentElement.classList.contains('lang-zh');
+      function v(n){var el=f.elements[n];return el?(''+el.value).trim():'';}
+      var subj=f.getAttribute('data-subject')||'Website enquiry';
+      var lines=[
+        (zh?'姓名: ':'Name: ')+v('name'),
+        (zh?'邮箱: ':'Email: ')+v('email'),
+        (zh?'意向课程: ':'Programme: ')+v('programme'),
+        (zh?'层级: ':'Level: ')+v('level'),
+        '',
+        v('message')
+      ];
+      window.location.href='mailto:info@fcu.ms?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(lines.join('\n'));
+    });
   });
 })();
