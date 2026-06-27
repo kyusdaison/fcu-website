@@ -341,6 +341,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var
 .calendar-grid>div{min-height:206px;}
 .assessment-grid>div{min-height:206px;}
 .research-route-grid>div{min-height:206px;}
+.research-integrity-grid>div{min-height:206px;}
 .journey-grid>div{min-height:188px;}
 .graduate-attributes-grid>div{min-height:204px;}
 .advising-grid>div{min-height:188px;}
