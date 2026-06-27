@@ -17,6 +17,8 @@
   --ink:#1E2A30; --navy:#111D24; --deepnavy:#233746;
   --maroon:#A51B18; --green:#1F4A3A;
   --muted:#6A7178; --line:#DCD2C3; --line2:#E7DECF;
+  --accent-rose:#E5A6A0; --dark-subtle:#C9C0B2;
+  --shadow-card:0 10px 30px rgba(17,29,36,.07);
   --serif:"Lora","Noto Serif SC",Georgia,serif;
   --sans:"Lato","Noto Sans SC",-apple-system,"Segoe UI",sans-serif;
   --wrap:1180px;
@@ -164,6 +166,8 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .lang-zh section .head p{font-weight:300;}
 .compact-head{margin-top:34px;margin-bottom:22px;}
 .compact-head h2{font-size:clamp(24px,2.8vw,34px);}
+.nav-head{margin-bottom:30px;}
+.no-margin-head{margin-bottom:0;}
 .note{font-size:14.5px;color:var(--muted);line-height:1.7;margin:24px 0 0;max-width:760px;}
 .lang-zh .note{font-weight:300;}
 .editnote{font-family:var(--sans);font-size:12.5px;letter-spacing:.04em;color:var(--muted);border:1px dashed var(--line);background:var(--paper);padding:10px 14px;margin:0 0 26px;display:inline-block;}
@@ -194,7 +198,7 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .home-routes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .route-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);}
 .route-card{background:var(--ivory);padding:28px 24px 24px;min-height:238px;display:flex;flex-direction:column;color:inherit;transition:.18s ease;}
-.route-card:hover,.route-card:focus-visible{background:#fff;border-color:var(--navy);box-shadow:0 10px 30px rgba(17,29,36,.07);transform:translateY(-2px);}
+.route-card:hover,.route-card:focus-visible{background:#fff;border-color:var(--navy);box-shadow:var(--shadow-card);transform:translateY(-2px);}
 .route-card .n{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--maroon);margin-bottom:18px;}
 .route-card:nth-child(2) .n{color:var(--deepnavy);}
 .route-card:nth-child(3) .n{color:var(--green);}
@@ -209,7 +213,7 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .faculties{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
 .fcard{background:var(--ivory);border:1px solid var(--line);padding:30px 30px 28px;display:flex;flex-direction:column;color:inherit;transition:.18s ease;}
-a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 10px 30px rgba(17,29,36,.07);}
+a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var(--shadow-card);}
 .fcard .top{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
 .fcard .num{width:36px;height:36px;flex:0 0 auto;background:var(--navy);color:var(--ivory);font-family:var(--serif);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center;}
 .fgrid .fcard:nth-child(2) .num{background:var(--maroon);}
@@ -224,6 +228,10 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .lang-zh .fcard .pl{letter-spacing:.08em;}
 .fcard .cardlink{margin-top:18px;font-size:12.5px;letter-spacing:.04em;}
 .fcard.flat{background:var(--navy);border-color:var(--navy);align-items:center;justify-content:center;text-align:center;}
+.fcard.flat .flat-label{color:var(--accent-rose);}
+.fcard.flat .flat-title{color:#fff;font-size:22px;margin-top:10px;}
+.fcard.flat .flat-desc{color:var(--dark-subtle);margin-top:12px;}
+.fcard.flat .flat-link{color:var(--accent-rose);display:inline-block;margin-top:16px;}
 .faculty-section-actions{margin:-14px 0 30px;}
 .faculty-overview-grid{align-items:stretch;}
 .faculty-overview-card{min-height:430px;}
@@ -280,6 +288,8 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:0 1
 .route-nav + .pad.band{border-top:0;}
 
 .phero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.section-cta{border-top:1px solid var(--line);padding-top:40px;}
+.phero-cta.compact-cta{margin-top:14px;}
 
 /* PROGRAMMES hub */
 .programme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
