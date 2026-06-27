@@ -342,6 +342,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var
 .assessment-grid>div{min-height:206px;}
 .research-route-grid>div{min-height:206px;}
 .journey-grid>div{min-height:188px;}
+.graduate-attributes-grid>div{min-height:204px;}
 .advising-grid>div{min-height:188px;}
 .advising-practice-grid>div{min-height:150px;}
 .quality-practice-grid>div{min-height:148px;}
