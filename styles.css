@@ -190,6 +190,21 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .domains .d p{font-size:14px;line-height:1.58;color:var(--muted);margin:12px 0 0;}
 .lang-zh .domains .d p{font-weight:300;}
 
+/* homepage routes */
+.home-routes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.route-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);}
+.route-card{background:var(--ivory);padding:28px 24px 24px;min-height:238px;display:flex;flex-direction:column;color:inherit;transition:.18s ease;}
+.route-card:hover,.route-card:focus-visible{background:#fff;border-color:var(--navy);box-shadow:0 10px 30px rgba(17,29,36,.07);transform:translateY(-2px);}
+.route-card .n{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--maroon);margin-bottom:18px;}
+.route-card:nth-child(2) .n{color:var(--deepnavy);}
+.route-card:nth-child(3) .n{color:var(--green);}
+.route-card:nth-child(4) .n{color:var(--maroon);}
+.route-card h3{font-family:var(--serif);font-weight:700;font-size:21px;line-height:1.28;color:var(--navy);margin:0 0 12px;}
+.lang-zh .route-card h3{letter-spacing:.5px;}
+.route-card p{font-size:15px;line-height:1.66;color:var(--muted);margin:0 0 20px;}
+.lang-zh .route-card p{font-weight:300;}
+.route-card .cardlink{margin-top:auto;font-size:12.5px;letter-spacing:.04em;}
+
 /* FACULTIES grid (home) */
 .faculties{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
 .fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
@@ -388,6 +403,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .research-culture .media-split{grid-template-columns:1fr;}
   .programme-grid{grid-template-columns:repeat(2,1fr);}
   .domains{grid-template-columns:repeat(2,1fr);}
+  .route-card-grid{grid-template-columns:repeat(2,1fr);}
   .fgrid{grid-template-columns:1fr;}
   .ladder{grid-template-columns:1fr;}
   .ladder .step{border-right:0;border-bottom:1px solid var(--line);}
@@ -425,6 +441,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .facnav a{flex:1 1 100%;justify-content:space-between;padding:12px 14px;}
   .route-nav{padding:22px 0;}
   .domains{grid-template-columns:1fr;}
+  .route-card-grid{grid-template-columns:1fr;}
+  .route-card{min-height:0;}
   .prog-row{flex-direction:column;gap:10px;}
   .contact .inner{padding:64px 0;}
   .ccard{padding:26px 22px;}
@@ -569,6 +587,8 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .fcard .chips span{display:block;max-width:100%;margin:0 0 6px;padding:5px 9px;font-size:11px;line-height:1.35;}
   .domains{display:block;border:0;background:transparent;}
   .domains .d{border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;page-break-inside:avoid;}
+  .route-card-grid{display:block;border:0;background:transparent;}
+  .route-card{border:1px solid var(--line);margin:0 0 8px;min-height:0;break-inside:avoid;page-break-inside:avoid;}
   .diagram-stage{grid-template-columns:1fr;}
   .route-nav{break-inside:avoid;page-break-inside:avoid;}
   .route-nav .facnav a{min-height:0;padding:8px 10px;color:var(--navy)!important;text-decoration:none;}
