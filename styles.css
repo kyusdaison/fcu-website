@@ -549,3 +549,5 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .footbar span{display:block;margin:0 0 6px;}
   footer{break-inside:avoid;}
 }
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
