@@ -335,6 +335,7 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var
 .entry-grid>div{min-height:196px;}
 .reading-grid>div{min-height:196px;}
 .admissions-grid>div{min-height:196px;}
+.application-review-grid>div{min-height:206px;}
 .quality-grid>div{min-height:196px;}
 .governance-grid>div{min-height:190px;}
 .faculty-research-grid>div{min-height:218px;}
