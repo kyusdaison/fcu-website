@@ -158,3 +158,15 @@
     });
   });
 })();
+
+/* back-to-top button */
+(function(){
+  var btn=document.querySelector('.to-top'); if(!btn) return;
+  function onScroll(){ btn.classList.toggle('show', window.scrollY>600); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  btn.addEventListener('click', function(){
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+  });
+})();
