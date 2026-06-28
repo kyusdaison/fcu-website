@@ -121,6 +121,9 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .research-inline-cta{margin:0 0 26px;}
 .research-domains .d{min-height:188px;}
 .research-ladder .step{min-height:260px;}
+.academic-life .media-panel img{aspect-ratio:16/10;}
+.academic-life-grid>div{min-height:142px;}
+.academic-life-cta{margin-top:24px;}
 .mechanism-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--line);gap:1px;}
 .mechanism-grid>div{background:var(--ivory);padding:20px 18px 18px;min-height:138px;}
 .mechanism-grid h3{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--navy);margin:0 0 8px;line-height:1.28;}
