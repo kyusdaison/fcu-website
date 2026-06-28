@@ -141,9 +141,13 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .lang-zh .glance-copy p{font-weight:300;}
 .glance-pathways{margin-top:24px;border-top:1px solid var(--line);}
 .glance-path{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;padding:15px 0;border-bottom:1px solid var(--line);color:inherit;transition:color .15s ease;}
+.route-index{margin-top:22px;}
+.route-index .glance-path{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:12px 0;}
 .glance-path .gp-n{font-family:var(--serif);font-weight:700;font-size:16px;line-height:1.35;color:var(--maroon);}
 .glance-path strong{display:block;font-family:var(--serif);font-weight:700;font-size:17px;line-height:1.28;color:var(--navy);}
 .glance-path em{display:block;font-style:normal;font-size:13.5px;line-height:1.55;color:var(--muted);margin-top:3px;}
+.route-index .glance-path strong{font-size:16.5px;}
+.route-index .glance-path em{font-size:13px;}
 .lang-zh .glance-path strong{font-family:var(--sans);font-weight:700;letter-spacing:.02em;}
 .lang-zh .glance-path em{font-weight:300;}
 .glance-path:hover strong,.glance-path:focus-visible strong{color:var(--maroon);}
