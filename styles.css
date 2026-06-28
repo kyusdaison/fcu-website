@@ -351,6 +351,14 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var
 .lang-zh .evidence-row em{font-weight:300;}
 
 /* ABOUT — trio & principles */
+.university-profile-table{border:1px solid var(--line);background:var(--line);display:grid;gap:1px;}
+.university-profile-row{display:grid;grid-template-columns:52px 150px minmax(0,1fr);gap:22px;align-items:start;background:var(--ivory);padding:22px 26px;color:inherit;}
+.university-profile-row .up-num{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.35;color:var(--maroon);}
+.university-profile-row .up-key{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--deepnavy);padding-top:5px;}
+.lang-zh .university-profile-row .up-key{letter-spacing:.06em;}
+.university-profile-row .up-main strong{display:block;font-family:var(--serif);font-weight:700;font-size:21px;line-height:1.28;color:var(--navy);margin-bottom:7px;}
+.university-profile-row .up-main em{display:block;font-style:normal;font-size:15px;line-height:1.65;color:var(--muted);}
+.lang-zh .university-profile-row .up-main em{font-weight:300;}
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .trio .t{border-top:3px solid var(--maroon);padding:22px 4px 0;}
 .trio .t:nth-child(2){border-color:var(--deepnavy);}
@@ -468,6 +476,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-route-row{grid-template-columns:46px 96px minmax(0,1fr);gap:14px;}
   .programme-route-row .pr-link{grid-column:3;text-align:left;}
   .research-pathway-row{grid-template-columns:48px 112px minmax(0,1fr);gap:16px;}
+  .university-profile-row{grid-template-columns:48px 118px minmax(0,1fr);gap:16px;}
   .evidence-row{grid-template-columns:44px 90px minmax(0,1fr);gap:14px;}
   .evidence-row .er-basic{grid-column:3;}
   .evidence-row .er-purpose{grid-column:3;}
@@ -511,6 +520,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-route-row .pr-link{grid-column:2;}
   .research-pathway-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
   .research-pathway-row .rp-stage,.research-pathway-row .rp-main{grid-column:2;}
+  .university-profile-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
+  .university-profile-row .up-key,.university-profile-row .up-main{grid-column:2;}
   .evidence-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
   .evidence-row .er-level,.evidence-row .er-route,.evidence-row .er-basic,.evidence-row .er-purpose{grid-column:2;}
   .programme-card{min-height:0;}
