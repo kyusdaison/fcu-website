@@ -137,8 +137,8 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .mechanism-grid h3{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--navy);margin:0 0 8px;line-height:1.28;}
 .mechanism-grid p{font-size:14px;line-height:1.62;color:var(--muted);margin:0;}
 .lang-zh .mechanism-grid p{font-weight:300;}
-.mechanism-grid>div,.standards-grid>div,.prog-row,.facnav a,.programme-system-row{min-width:0;}
-.mechanism-grid h3,.mechanism-grid p,.standards-grid h3,.standards-grid p,.prog .pk,.prog .pv,.facnav a,.programme-system-row strong,.programme-system-row em{overflow-wrap:break-word;}
+.mechanism-grid>div,.standards-grid>div,.prog-row,.facnav a,.programme-system-row,.faculty-system-row{min-width:0;}
+.mechanism-grid h3,.mechanism-grid p,.standards-grid h3,.standards-grid p,.prog .pk,.prog .pv,.facnav a,.programme-system-row strong,.programme-system-row em,.faculty-system-row strong,.faculty-system-row em{overflow-wrap:break-word;}
 
 /* AT A GLANCE */
 .glance{border-bottom:1px solid var(--line);}
@@ -283,6 +283,16 @@ a.fcard:hover{border-color:var(--navy);transform:translateY(-3px);box-shadow:var
 .faculty-actions .secondary{color:var(--deepnavy);}
 .faculty-mechanism-grid>div{min-height:130px;}
 .faculty-standards-grid>div{min-height:198px;}
+.faculty-system-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.faculty-system-table{border:1px solid var(--line);background:var(--line);display:grid;gap:1px;}
+.faculty-system-row{display:grid;grid-template-columns:48px 1.28fr 1.12fr 1.2fr 1.15fr;gap:18px;align-items:start;background:var(--paper);padding:21px 22px;color:inherit;}
+.faculty-system-row:nth-child(even){background:var(--ivory);}
+.faculty-system-row .fs-num{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.35;color:var(--maroon);}
+.faculty-system-row .fs-faculty strong{display:block;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.28;color:var(--navy);}
+.faculty-system-row .fs-k{display:block;font-family:var(--sans);font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--maroon);margin:0 0 6px;}
+.lang-zh .faculty-system-row .fs-k{letter-spacing:.06em;}
+.faculty-system-row em{display:block;font-style:normal;font-size:14px;line-height:1.58;color:var(--muted);}
+.lang-zh .faculty-system-row em{font-weight:300;}
 .admissions-support-grid>div{min-height:190px;}
 .student-support-grid>div{min-height:198px;}
 
@@ -500,6 +510,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-system-row{grid-template-columns:44px 90px minmax(0,1fr);gap:14px;}
   .programme-system-row .ps-route{grid-column:3;}
   .programme-system-row .ps-work,.programme-system-row .ps-evidence,.programme-system-row .ps-progression{grid-column:3;}
+  .faculty-system-row{grid-template-columns:44px minmax(0,1fr);gap:14px;}
+  .faculty-system-row .fs-faculty,.faculty-system-row .fs-question,.faculty-system-row .fs-work,.faculty-system-row .fs-contribution{grid-column:2;}
   .research-pathway-row{grid-template-columns:48px 112px minmax(0,1fr);gap:16px;}
   .university-profile-row{grid-template-columns:48px 118px minmax(0,1fr);gap:16px;}
   .evidence-row{grid-template-columns:44px 90px minmax(0,1fr);gap:14px;}
@@ -546,6 +558,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-route-row .pr-link{grid-column:2;}
   .programme-system-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
   .programme-system-row .ps-level,.programme-system-row .ps-route,.programme-system-row .ps-work,.programme-system-row .ps-evidence,.programme-system-row .ps-progression{grid-column:2;}
+  .faculty-system-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
+  .faculty-system-row .fs-faculty,.faculty-system-row .fs-question,.faculty-system-row .fs-work,.faculty-system-row .fs-contribution{grid-column:2;}
   .research-pathway-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
   .research-pathway-row .rp-stage,.research-pathway-row .rp-main{grid-column:2;}
   .university-profile-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
@@ -708,10 +722,12 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .compact-head h2{font-size:24px;}
   .profile-grid>div{min-height:0;}
   .media-split,.split{grid-template-columns:1fr;gap:24px;}
-  .mechanism-grid,.standards-grid,.programme-system-table{display:block;border:0;background:transparent;}
-  .mechanism-grid>div,.standards-grid>div,.programme-system-row{min-height:0;border:1px solid var(--line);border-top-width:3px;margin:0 0 8px;break-inside:avoid;page-break-inside:avoid;}
+  .mechanism-grid,.standards-grid,.programme-system-table,.faculty-system-table{display:block;border:0;background:transparent;}
+  .mechanism-grid>div,.standards-grid>div,.programme-system-row,.faculty-system-row{min-height:0;border:1px solid var(--line);border-top-width:3px;margin:0 0 8px;break-inside:avoid;page-break-inside:avoid;}
   .programme-system-row{display:block;padding:20px 22px;}
   .programme-system-row .ps-num,.programme-system-row .ps-level,.programme-system-row .ps-route,.programme-system-row .ps-work,.programme-system-row .ps-evidence,.programme-system-row .ps-progression{display:block;margin:0 0 8px;}
+  .faculty-system-row{display:block;padding:20px 22px;}
+  .faculty-system-row .fs-num,.faculty-system-row .fs-faculty,.faculty-system-row .fs-question,.faculty-system-row .fs-work,.faculty-system-row .fs-contribution{display:block;margin:0 0 8px;}
   .media-panel img{max-height:520px;object-fit:cover;}
   .ladder{display:block;border:0;}
   .ladder .step{border:1px solid var(--line);margin:0 0 8px;padding:22px 24px;break-inside:avoid;page-break-inside:avoid;}
