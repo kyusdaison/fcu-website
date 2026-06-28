@@ -231,6 +231,16 @@ section .head p{font-size:17px;color:var(--muted);line-height:1.75;margin:0;}
 .route-card p{font-size:15px;line-height:1.66;color:var(--muted);margin:0 0 20px;}
 .lang-zh .route-card p{font-weight:300;}
 .route-card .cardlink{margin-top:auto;font-size:12.5px;letter-spacing:.04em;}
+.pathway-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;border:1px solid var(--line);background:var(--line);}
+.pathway-card{display:grid;grid-template-rows:auto 1fr auto;gap:18px;background:var(--ivory);padding:24px 22px 22px;min-height:214px;color:inherit;transition:background .16s ease,box-shadow .16s ease,transform .16s ease;}
+.pathway-card:hover,.pathway-card:focus-visible{background:#fff;box-shadow:var(--shadow-card);transform:translateY(-2px);}
+.pathway-card .pc-num{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.2;color:var(--maroon);}
+.pathway-card:nth-child(2) .pc-num{color:var(--deepnavy);}
+.pathway-card:nth-child(3) .pc-num{color:var(--green);}
+.pathway-card .pc-main strong{display:block;font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.25;color:var(--navy);margin-bottom:8px;}
+.pathway-card .pc-main em{display:block;font-style:normal;font-size:14.5px;line-height:1.58;color:var(--muted);}
+.lang-zh .pathway-card .pc-main em{font-weight:300;}
+.pathway-card .pc-link{font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:.04em;color:var(--maroon);}
 
 /* FACULTIES grid (home) */
 .faculties{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -482,6 +492,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .evidence-row .er-purpose{grid-column:3;}
   .domains{grid-template-columns:repeat(2,1fr);}
   .route-card-grid{grid-template-columns:repeat(2,1fr);}
+  .pathway-card-grid{grid-template-columns:repeat(2,1fr);}
   .fgrid{grid-template-columns:1fr;}
   .ladder{grid-template-columns:1fr;}
   .ladder .step{border-right:0;border-bottom:1px solid var(--line);}
@@ -531,6 +542,10 @@ footer{background:var(--navy);color:#C7CDce;}
   .domains{grid-template-columns:1fr;}
   .route-card-grid{grid-template-columns:1fr;}
   .route-card{min-height:0;}
+  .pathway-card-grid{grid-template-columns:1fr;}
+  .pathway-card{min-height:0;grid-template-columns:38px minmax(0,1fr);grid-template-rows:auto auto;gap:8px 12px;padding:18px 16px;}
+  .pathway-card .pc-num{grid-row:1 / span 2;}
+  .pathway-card .pc-link{grid-column:2;}
   .prog-row{flex-direction:column;gap:10px;}
   .contact .inner{padding:64px 0;}
   .ccard{padding:26px 22px;}
@@ -693,6 +708,10 @@ svg.diagram{width:100%;height:auto;display:block;overflow:visible;}
   .domains .d{border:1px solid var(--line);margin:0 0 8px;break-inside:avoid;page-break-inside:avoid;}
   .route-card-grid{display:block;border:0;background:transparent;}
   .route-card{border:1px solid var(--line);margin:0 0 8px;min-height:0;break-inside:avoid;page-break-inside:avoid;}
+  .pathway-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;border:0;background:transparent;}
+  .pathway-card{border:1px solid var(--line);margin:0;min-height:0;padding:16px 18px;gap:10px;break-inside:avoid;page-break-inside:avoid;}
+  .pathway-card .pc-main strong{font-size:17px;}
+  .pathway-card .pc-main em{font-size:12.5px;line-height:1.45;}
   .diagram-stage{grid-template-columns:1fr;}
   .route-nav{break-inside:avoid;page-break-inside:avoid;}
   .route-nav .facnav a{min-height:0;padding:8px 10px;color:var(--navy)!important;text-decoration:none;}
