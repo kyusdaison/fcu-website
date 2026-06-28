@@ -121,6 +121,14 @@ header.menu-open .menubtn span:nth-child(3){transform:translateY(-6px) rotate(-4
 .research-inline-cta{margin:0 0 26px;}
 .research-domains .d{min-height:188px;}
 .research-ladder .step{min-height:260px;}
+.research-pathway-table{border:1px solid var(--line);background:var(--line);display:grid;gap:1px;}
+.research-pathway-row{display:grid;grid-template-columns:54px 138px minmax(0,1fr);gap:22px;align-items:start;background:var(--ivory);padding:22px 26px;color:inherit;}
+.research-pathway-row .rp-num{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.35;color:var(--maroon);}
+.research-pathway-row .rp-stage{font-family:var(--sans);font-weight:700;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--deepnavy);padding-top:5px;}
+.lang-zh .research-pathway-row .rp-stage{letter-spacing:.06em;}
+.research-pathway-row .rp-main strong{display:block;font-family:var(--serif);font-weight:700;font-size:21px;line-height:1.28;color:var(--navy);margin-bottom:7px;}
+.research-pathway-row .rp-main em{display:block;font-style:normal;font-size:15px;line-height:1.65;color:var(--muted);}
+.lang-zh .research-pathway-row .rp-main em{font-weight:300;}
 .academic-life .media-panel img{aspect-ratio:16/10;}
 .academic-life-grid>div{min-height:142px;}
 .academic-life-cta{margin-top:24px;}
@@ -459,6 +467,7 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-grid{grid-template-columns:repeat(2,1fr);}
   .programme-route-row{grid-template-columns:46px 96px minmax(0,1fr);gap:14px;}
   .programme-route-row .pr-link{grid-column:3;text-align:left;}
+  .research-pathway-row{grid-template-columns:48px 112px minmax(0,1fr);gap:16px;}
   .evidence-row{grid-template-columns:44px 90px minmax(0,1fr);gap:14px;}
   .evidence-row .er-basic{grid-column:3;}
   .evidence-row .er-purpose{grid-column:3;}
@@ -500,6 +509,8 @@ footer{background:var(--navy);color:#C7CDce;}
   .programme-route-row .pr-level{grid-column:2;}
   .programme-route-row .pr-main{grid-column:2;}
   .programme-route-row .pr-link{grid-column:2;}
+  .research-pathway-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
+  .research-pathway-row .rp-stage,.research-pathway-row .rp-main{grid-column:2;}
   .evidence-row{grid-template-columns:38px minmax(0,1fr);gap:10px;padding:18px 16px;}
   .evidence-row .er-level,.evidence-row .er-route,.evidence-row .er-basic,.evidence-row .er-purpose{grid-column:2;}
   .programme-card{min-height:0;}
